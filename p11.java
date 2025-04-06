@@ -1,21 +1,26 @@
-public class ShapeAreaCalculator {
-    static final double PI = 3.14;
+class Shape {
 
-    void circleArea(float radius) {
-        double area = PI * radius * radius;
-        System.out.println("Area of the circle: " + area);
+       static final double PI = 3.14;
+
+       void Area(float r) {
+        double A = PI * r * r;
+        System.out.println("Area of the circle is: " + A);
     }
 
-    void squareArea(float side) {
-        double area = side * side;
-        System.out.println("Area of the square: " + area);
+      void Area(float l, float w) {
+        double A = l * w;
+        System.out.println("Area of the rectangle is: " + A);
     }
 }
 
-class Main {
+class veer {
+
     public static void main(String[] args) {
-        ShapeAreaCalculator calculator = new ShapeAreaCalculator();
-        calculator.circleArea(4);
-        calculator.squareArea(5);
-    }
+             Shape s1 = new Shape();
+
+             s1.Area(4);
+
+
+             s1.Area(2, 5);
+    }
 }
